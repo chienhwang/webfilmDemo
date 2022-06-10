@@ -1,0 +1,316 @@
+*{
+   padding: 0px;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    font-size:14px;
+    font-family:roboto,sans-serif;
+    font-weight: 400;
+}
+a{
+    color:none;
+}
+a:visited{
+    color: #cac9c9;
+}
+.wrapper{
+    width: 76%;
+    margin: 0 auto;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    color: #cac9c9;
+}
+.header{
+    flex: 1;
+
+}
+.navBar{
+    max-width : 100%;
+    max-height: 76px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.8px solid #4d4c4c;
+}
+
+.navBar .logo{
+   flex: 1;
+    text-align: center;
+}
+
+.navBar .logo img{
+    height: 70px;
+
+}
+.navBar .logo img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Search{
+    flex: 3;
+    text-align: center;
+    display: flex;
+
+}
+.Search input{
+    flex: 7;
+    font-size: 16px;
+    padding: 8px;
+    margin-left: 30px;
+    border: none;
+    background-color: #f8f8f8;
+    color: #cac9c9;
+    
+}
+.Search i{
+    flex: 1;
+    padding: 6px;
+    font-size: 16px;
+   cursor: pointer;
+    background-color: #000;
+}
+.iconAction{
+    flex: 3;
+    text-align: center;
+
+
+}
+.iconAction i{
+    font-size: 24px;
+    padding: 2px 6px;
+    margin: 4px 24px;
+    cursor: pointer;
+    background-color: #000;
+
+}
+
+.noticed{
+   flex: 1;
+    font-size: 16px;
+    background-color: #404040;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 8px 8px;
+
+}
+
+.headerBanner{
+    margin: 8px 8px;
+    flex: 1;
+    max-height: 80px;
+}
+.headerBanner img{
+    width: 100%;
+    max-height: 79px;
+}
+
+ /* end NavBar */
+
+.content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    border: 1px solid black;
+}
+
+.filmDecu{
+    flex: 1;
+    height: 340px;
+    border-radius: 3px;
+    margin: 8px 8px;
+}
+.filmDecu .tag ,.tagCapNhat{
+    margin-top:3px ;
+    border-radius: 3px;
+    font-size: 18px;
+    background-color: #242525;
+    padding: 6px 8px;
+    text-align: start;
+}
+
+.filmDecu .tag span ,.tagCapNhat span{
+    background-color: #000;
+    padding: 8px 12px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    opacity: 0.8;
+}
+
+        /* end tag */
+
+
+.slideBar{
+    width: 100%;
+    margin-top: 14px;
+    padding-left: 16px;
+    background-color: #404040;
+    border-radius: 3px;
+
+}
+
+.contentDeCu{
+    position: relative;
+    cursor: pointer;
+}
+.contentDeCu:hover{
+    background-color: #3e3b3b;
+    opacity: 0.9;
+}
+.contentDeCu .tagTap{
+    background-color: #bd2d2d;
+    color: rgb(255, 255, 255);
+    padding: 6px 8px;
+    border-radius: 8%;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+   opacity: 0.9;
+}
+
+.contentDeCu .tenfilm{
+    color: rgb(255, 255, 255);
+    z-index: 1;
+    position: absolute;
+    bottom: 1%;
+    left: 25%;
+    text-align: center;
+
+}
+.contentDeCu .imgFilm{
+    width: 270px;
+    height: 270px;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.contentDeCu .imgFilm img:hover{
+  
+}
+.contentDeCu .imgFilm img{
+    width: 95%;
+    height: 270px;
+    border-radius: 3px;
+}
+
+/* end-film decu */
+
+.filmMoicapnhat{
+   flex: 1;
+    display: flex;   
+    flex-direction: column; 
+    margin: 8px 8px;
+}
+
+
+
+
+.contentCapNhat{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #3e3b3b;
+    border-radius: 3px;
+    
+}
+.contentCapNhat .itemCapnhat{
+    position: relative;
+    padding-left: 6px;
+    margin: 8px 0px;
+    cursor: pointer;
+
+}
+
+.contentCapNhat .itemCapnhat .TagTap2{
+    background-color: #3e3b3b;
+    color: rgb(255, 255, 255);
+    padding: 6px 8px;
+    border-radius: 8%;
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    opacity: 0.9;
+}
+.contentCapNhat .itemCapnhat .TagRate{
+    background-color: #bd2d2d;
+    color:  rgb(255, 255, 255);
+    padding: 6px 8px;
+    border-radius: 8%;
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    opacity: 0.9;
+}
+.contentCapNhat .itemCapnhat .imgCapNhat{
+    width: 180px;
+    height: 280px;
+    border :#000 6px solid;
+}
+.contentCapNhat .itemCapnhat .imgCapNhat img:hover{
+    background-color: #000;
+    opacity: 0.7;
+}
+.contentCapNhat .itemCapnhat .imgCapNhat img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.contentCapNhat .itemCapnhat .tenFilmCapnhat{
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    
+    opacity: 0.8;
+}
+.contentCapNhat .itemCapnhat .tenFilmCapnhat h3{
+    min-width: 100%;
+    -ms-text-overflow: unset;
+}
+.listNumpage {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #4d4c4c;
+    margin: 8px 8px;
+    
+}
+
+.listNumpage .numPage{
+    background-color: #fff;
+    border: #404040 2px solid;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    margin-left: 6px;
+    border-radius: 30px;
+}
+.listNumpage .numPage:hover{
+  opacity: 0.5;
+  transition: ease 0.5;
+}
+.numPage a{
+     text-decoration: none;
+     color:rgb(31, 28, 28);
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #242525;
+    
+}
+.footer .footerContact h3{
+    text-align: center;
+    margin-top: 60px;
+    margin-right: 20px;
+}
